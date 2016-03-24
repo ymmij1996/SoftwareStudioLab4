@@ -15,7 +15,10 @@ public class Square extends Shape {
 	public Color getRandomColor() {		
 		// TODO Return random color produce from java.util.Random;
 		// Java 'Color' class takes 3 floats, from 0 to 1.
-		
+		Random rand=new Random();//,g=0,b=0;
+		float r=rand.nextFloat();
+		float g=rand.nextFloat();
+		float b=rand.nextFloat();
 		// TODO Return color produced by three rgb floats.
 		return new Color(r, g, b);
 	}
@@ -23,13 +26,13 @@ public class Square extends Shape {
 	@Override
 	public int getShapeWidth(){
 		// TODO Return Square width
-		return 0;
+		return shapeWidth;
 	}
 	
 	@Override
 	public int getShapeHeight(){
 		// TODO Return Square height
-		return 0;
+		return shapeWidth;
 	}
 
 
